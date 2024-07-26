@@ -24,6 +24,12 @@ jobs:
       - name: Build the site
         run: npm run build
 
+      - name: Print Git User
+        run: echo $GIT_USER
+
+      - name: Print Git Email
+        run: echo $GIT_EMAIL
+
       - name: Deploy to GitHub Pages
         env:
           GIT_USER: ${{ secrets.GIT_USER }}
