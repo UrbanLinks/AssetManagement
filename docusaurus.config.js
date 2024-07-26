@@ -67,7 +67,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Asset Management for Sustainable Civil Infrastructure',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -130,7 +130,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} `,
       },
       prism: {
         theme: prismThemes.github,
