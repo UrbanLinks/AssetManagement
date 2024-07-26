@@ -7,7 +7,7 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "set GIT_USER=UrbanLinks && set USE_SSH=true && docusaurus deploy",
+    "deploy": "scross-env-shell 'GIT_USER=$GIT_USER GIT_TOKEN=$GIT_TOKEN docusaurus deploy'",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
