@@ -28,4 +28,8 @@ jobs:
         env:
           GIT_USER: ${{ secrets.GIT_USER }}
           GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
+        run: |
+          git config --global user.name "${{ secrets.GIT_USER }}"
+          git config --global user.email "74367705+rebecca-dziedzic@users.noreply.github.com"
+          git remote set-url origin https://${{ secrets.GIT_USER }}:${{ secrets.GIT_TOKEN }}@github.com/UrbanLinks/AssetManagement.git
         run: npm run deploy
