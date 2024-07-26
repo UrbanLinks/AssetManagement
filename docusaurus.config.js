@@ -10,7 +10,7 @@ const { themes } = require('prism-react-renderer');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Asset Management for Sustainable Civil Infrastructure',
-  tagline: 'Lecture Notes',
+  tagline: 'Lecture Notes for a Step-by-Step Guide to Asset Management',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
