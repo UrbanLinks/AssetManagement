@@ -79,8 +79,7 @@ const config = {
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Notes',
-          },
-          ,
+          }
         ],
       },
       footer: {
