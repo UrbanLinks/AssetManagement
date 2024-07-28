@@ -22,3 +22,16 @@
   align-items: center;
   justify-content: center;
 }
+
+.heroMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh; /* Adjust as needed */
+  background-color: var(--ifm-color-primary);
+}
+
+.heroImage {
+  max-width: 100%;
+  height: auto;
+}
