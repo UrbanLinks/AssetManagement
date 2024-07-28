@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# 4. Life Cyccle & Replacement Costs
+# 4. Life Cycle & Replacement Costs
 
 
 ## Depreciation
