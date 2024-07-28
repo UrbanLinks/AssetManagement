@@ -27,9 +27,9 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="Asset Management for Sustainable Civil Infrastructure Lecture Notes for a Step-by-Step Guide to Asset Management">
       <HomepageHeader />
-      <main>
+      <main className={clsx('hero hero--primary')}>
        {/* Additional content can be added here if needed */}
       </main>
     </Layout>
