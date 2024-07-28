@@ -31,7 +31,7 @@ export default function Home() {
       <HomepageHeader />
       <main className={clsx('hero hero--primary', styles.heroMain)}>
         <div className="container">
-          <img src={require('@site/static/image/corner.png').default} alt="Corner Figure" className={styles.heroImage} />
+          <img src={require('../../static/image/corner.png').default} alt="Corner Figure" className={styles.heroImage} />
         </div>
       </main>
     </Layout>
