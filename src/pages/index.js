@@ -30,8 +30,12 @@ export default function Home() {
       description="Asset Management for Sustainable Civil Infrastructure Lecture Notes for a Step-by-Step Guide to Asset Management">
       <HomepageHeader />
       <main className={clsx('hero hero--primary', styles.heroMain)}>
-        <div className="container">
-          <img src={require('../../static/image/corner.png').default} alt="Corner Figure" className={styles.heroImage} />
+      <div className={styles.heroImageContainer}>
+          <img
+            src={require('../../static/img/corner.png').default}
+            alt="Corner Figure"
+            className={styles.heroImage}
+          />
         </div>
       </main>
     </Layout>

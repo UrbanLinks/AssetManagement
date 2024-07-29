@@ -6,13 +6,13 @@
  */
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #4b568b;
-  --ifm-color-primary-dark: #434d7d;
-  --ifm-color-primary-darker: #404976;
-  --ifm-color-primary-darkest: #353c61;
-  --ifm-color-primary-light: #525f99;
-  --ifm-color-primary-lighter: #5663a0;
-  --ifm-color-primary-lightest: #5b68a6;
+  --ifm-color-primary: #689eb3;
+  --ifm-color-primary-dark: #5592a9;
+  --ifm-color-primary-darker: #518aa0;
+  --ifm-color-primary-darkest: #427184;
+  --ifm-color-primary-light: #7baabc;
+  --ifm-color-primary-lighter: #84b0c1;
+  --ifm-color-primary-lightest: #8eb6c6;
 }
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {

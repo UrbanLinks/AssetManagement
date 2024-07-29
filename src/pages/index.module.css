@@ -5,15 +5,18 @@
 
  .heroBanner {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 60vh;
+  min-height: 30vh;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 1rem;
   }
 }
 
@@ -27,11 +30,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 40vh; /* Adjust as needed */
   background-color: var(--ifm-color-primary);
+  padding: 0; 
+  margin: 0; 
+  width: 100vw; 
+  height: 80vh;
+  overflow: hidden; 
+}
+
+.heroImageContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .heroImage {
-  max-width: 100%;
-  height: auto;
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+
 }
