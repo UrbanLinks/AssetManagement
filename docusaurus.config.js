@@ -84,7 +84,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} `,
+        copyright: `Copyright © Rebecca Dziedzic ${new Date().getFullYear()} `,
       },
       prism: {
         theme: themes.solarizedlight, // Light theme
