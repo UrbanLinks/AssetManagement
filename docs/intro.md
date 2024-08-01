@@ -1,3 +1,5 @@
+import React from 'react';
+
 ---
 sidebar_position: 1
 ---
@@ -117,3 +119,8 @@ Thus, all levels of documents are also aligned, as illustrated in Figure 1. The 
 
 ![Asset Management Documents](/img/am_documents.png)
 <i>Asset Management Documents</i>
+
+<figure style={{ textAlign: 'center' }}>
+  <img src={require('/img/am_steps.png').default} alt="Asset Management Steps" style={{ width: '50%', margin: '0 auto' }} />
+  <figcaption><i>Figure 1: Asset Management Steps</i></figcaption>
+</figure>
