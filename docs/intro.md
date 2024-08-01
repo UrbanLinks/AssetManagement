@@ -96,8 +96,10 @@ To drive the potential benefits from advanced asset management practices, the
 Water Environment Research Foundation (WERF) developed the [SIMPLE
 (Sustainable Infrastructure Management Program Learning Environment) process](https://cleanwatersocal.org/media/acfupload/reference/Walter_SIMPLE_SCAP_AM_Workshop_OCSD__April_20-2015.pdf). SIMPLE defines 10 steps toward asset management.The steps are related to six overarching questions concerning asset condition, life-cycle costs, levels of service, risk, optimized investment, and funding strategy, described below.
 
-![Asset Management Steps](/img/am_steps.png)
-<i>Asset Management Steps [(Adapted from WERF 2010)](https://www.waterrf.org/research/projects/sustainable-infrastructure-management-program-learning-environment-simple-version)</i>
+<figure style={{ textAlign: 'center' }}>
+  <img src={require('/img/am_steps.png').default} alt="Asset Management Steps" style={{ width: '100%', margin: '0 auto' }} />
+  <figcaption><i>sset Management Steps [(Adapted from WERF 2010)](https://www.waterrf.org/research/projects/sustainable-infrastructure-management-program-learning-environment-simple-version)</i></figcaption>
+</figure>
 
 
 * Assess State of Assets: This step involves identifying the types and locations of assets, which is crucial for planning current and future investments. 
@@ -116,11 +118,7 @@ The steps described above are clearly interconnected and depend on an understand
 
 Thus, all levels of documents are also aligned, as illustrated in Figure 1. The asset management (AM) policy is established at an organizational level to define the overall intent, scope, principles, and responsibilities of AM. The AM strategy defines objectives, i.e., the practical implications of the policy, and performance targets within a set timeframe (around 5 years). The AM plan describes the plans to achieve the established objectives for each asset type, including: the state of the infrastructure, desired level of service, lifecycle management strategy and financial strategy. Lastly, the maintenance and renewal plans detail the actions that should be taken in a short time frame (1 year) to operationalize the AM plans [(FCM 2018)](https://fcm.ca/en/resources/mamp/guidebook-how-develop-asset-management-policy-and-strategy).
 
-
-![Asset Management Documents](/img/am_documents.png)
-<i>Asset Management Documents</i>
-
 <figure style={{ textAlign: 'center' }}>
-  <img src={require('/img/am_steps.png').default} alt="Asset Management Steps" style={{ width: '50%', margin: '0 auto' }} />
-  <figcaption><i>Figure 1: Asset Management Steps</i></figcaption>
+  <img src={require('/img/am_documents.png').default} alt="Asset Management Documents" style={{ width: '60%', margin: '0 auto' }} />
+  <figcaption><i>Figure 1: Asset Management Documents</i></figcaption>
 </figure>
