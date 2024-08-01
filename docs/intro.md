@@ -4,7 +4,6 @@ sidebar_position: 1
 
 import React from 'react';
 
-
 # Introduction
 
 Infrastructure failure can have devastating consequences, including service disruptions, economic losses, environmental damage, and even fatalities. For instance, the increasing frequency of severe weather events exacerbated by climate change has been linked to the proliferation of [potholes](https://www.cbc.ca/news/canada/london/pothole-climate-change-solutions-1.6773454), causing significant damage to vehicles and posing safety risks on the roads​. 
@@ -99,7 +98,7 @@ Water Environment Research Foundation (WERF) developed the [SIMPLE
 
 <figure style={{ textAlign: 'center' }}>
   <img src={require('/img/am_steps.png').default} alt="Asset Management Steps" style={{ width: '100%', margin: '0 auto' }} />
-  <figcaption><i>sset Management Steps [(Adapted from WERF 2010)](https://www.waterrf.org/research/projects/sustainable-infrastructure-management-program-learning-environment-simple-version)</i></figcaption>
+  <figcaption><i>Asset Management Steps [(Adapted from WERF 2010)](https://www.waterrf.org/research/projects/sustainable-infrastructure-management-program-learning-environment-simple-version)</i></figcaption>
 </figure>
 
 
@@ -117,9 +116,9 @@ Each of these steps are explored in detail in the following chapters.
 ### Line of Sight
 The steps described above are clearly interconnected and depend on an understanding of the assets, systems, organizations, stakeholders, and the environment. To ensure alignment between asset management plans, operations, and broader organizational strategies, “line of sight” is essential. The concept of “line of sight” in asset management generally implies that all levels of operational, tactical, and strategic asset decision making are aligned. Everyone in the organization should be involved in asset management, from senior management to operators, as well as council and community stakeholders. It requires a corporate-wide initiative for effective implementation.
 
-Thus, all levels of documents are also aligned, as illustrated in Figure 1. The asset management (AM) policy is established at an organizational level to define the overall intent, scope, principles, and responsibilities of AM. The AM strategy defines objectives, i.e., the practical implications of the policy, and performance targets within a set timeframe (around 5 years). The AM plan describes the plans to achieve the established objectives for each asset type, including: the state of the infrastructure, desired level of service, lifecycle management strategy and financial strategy. Lastly, the maintenance and renewal plans detail the actions that should be taken in a short time frame (1 year) to operationalize the AM plans [(FCM 2018)](https://fcm.ca/en/resources/mamp/guidebook-how-develop-asset-management-policy-and-strategy).
+Thus, all levels of documents are also aligned, as illustrated in the figure below. The asset management (AM) policy is established at an organizational level to define the overall intent, scope, principles, and responsibilities of AM. The AM strategy defines objectives, i.e., the practical implications of the policy, and performance targets within a set timeframe (around 5 years). The AM plan describes the plans to achieve the established objectives for each asset type, including: the state of the infrastructure, desired level of service, lifecycle management strategy and financial strategy. Lastly, the maintenance and renewal plans detail the actions that should be taken in a short time frame (1 year) to operationalize the AM plans [(FCM 2018)](https://fcm.ca/en/resources/mamp/guidebook-how-develop-asset-management-policy-and-strategy).
 
 <figure style={{ textAlign: 'center' }}>
   <img src={require('/img/am_documents.png').default} alt="Asset Management Documents" style={{ width: '60%', margin: '0 auto' }} />
-  <figcaption><i>Figure 1: Asset Management Documents</i></figcaption>
+  <figcaption><i>Asset Management Documents</i></figcaption>
 </figure>
