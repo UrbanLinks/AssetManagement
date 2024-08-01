@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# 5. Determine Asset Risk 
+# 6. Determine Asset Risk 
 
 ## Probability of Failure
 
