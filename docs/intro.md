@@ -115,6 +115,5 @@ The steps described above are clearly interconnected and depend on an understand
 Thus, all levels of documents are also aligned, as illustrated in Figure 1. The asset management (AM) policy is established at an organizational level to define the overall intent, scope, principles, and responsibilities of AM. The AM strategy defines objectives, i.e., the practical implications of the policy, and performance targets within a set timeframe (around 5 years). The AM plan describes the plans to achieve the established objectives for each asset type, including: the state of the infrastructure, desired level of service, lifecycle management strategy and financial strategy. Lastly, the maintenance and renewal plans detail the actions that should be taken in a short time frame (1 year) to operationalize the AM plans [(FCM 2018)](https://fcm.ca/en/resources/mamp/guidebook-how-develop-asset-management-policy-and-strategy).
 
 
-<img src="/img/am_documents.png" alt="Asset Management Documents" style="width: 50%; display: block; margin-left: auto; margin-right: auto;" />
-
+![Steps in Asset Management](/img/am_steps.png)
 <p align="center"><i>Figure 1: Asset Management Documents</i></p>
