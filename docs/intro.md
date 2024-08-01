@@ -95,7 +95,7 @@ Water Environment Research Foundation (WERF) developed the [SIMPLE
 (Sustainable Infrastructure Management Program Learning Environment) process](https://cleanwatersocal.org/media/acfupload/reference/Walter_SIMPLE_SCAP_AM_Workshop_OCSD__April_20-2015.pdf). SIMPLE defines 10 steps toward asset management.The steps are related to six overarching questions concerning asset condition, life-cycle costs, levels of service, risk, optimized investment, and funding strategy, described below.
 
 ![Steps in Asset Management](/img/am_steps.png)
-<p align="center"><i>Figure 1: Asset Management Steps
+<p align="center"><i>Figure 1: Asset Management Steps</i></p
 
 
 * Assess State of Assets: This step involves identifying the types and locations of assets, which is crucial for planning current and future investments. 
