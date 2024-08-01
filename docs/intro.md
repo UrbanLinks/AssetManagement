@@ -14,13 +14,14 @@ In 2017, the Province of Ontario approved a new municipal asset management plann
 should include a discussion of proposed levels of service by 2024 [(AMO 2018)](https://www.ontario.ca/page/municipal-asset-management-planning). In Building Together, Ontario’s plan to invest in public infrastructure, the province stated that any municipality seeking provincial infrastructure funding must demonstrate how its proposed project fits within a detailed asset management plan. Such a plan should contain the state of local infrastructure, expected levels
 of service, an asset management strategy, and a financing strategy (Government of Ontario 2018).
 
-:::note ###Case Study: Calgary's Water Main Break
+:::info Case Study: Calgary's Water Main Break
 
 On June 5th 2024, Calgary experienced a catastrophic water main break that severely impacted the city’s water supply. The break was found to be on a critical transmission line made of prestressed concrete cylinder pipe (PCCP), installed in 1975. This type of pipe, known for its composite material and high-strength steel wires, has a history of catastrophic failures due to metallurgical problems in the steel wires, particularly in pipes manufactured between 1960 and 1980.
 The city was required to implement a boil water advisory, strict water usage restrictions and declare a temporary local state of emergency. Water wagons were deployed to meet residential needs.
-As repair efforts took place, additional "hot spots" were identified in the water infrastructure and further repairs were undertaken. This event highlights the importance of proactive asset management in monitoring and maintaining critical infrastructure to prevent similar failures in the future .
+As repair efforts took place, additional "hot spots" were identified in the water infrastructure and further repairs were undertaken. This event highlights the importance of proactive asset management in monitoring and maintaining critical infrastructure.
 
 Read more: https://www.cbc.ca/news/canada/calgary/water-main-break-calgary-water-restrictions-pipe-component-1.7239571
+
 https://calgaryherald.com/news/local-news/how-did-calgarys-water-crisis-unfold-a-day-by-day-look-at-what-we-know
 
 :::
