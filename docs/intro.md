@@ -94,9 +94,9 @@ To drive the potential benefits from advanced asset management practices, the
 Water Environment Research Foundation (WERF) developed the [SIMPLE
 (Sustainable Infrastructure Management Program Learning Environment) process](https://cleanwatersocal.org/media/acfupload/reference/Walter_SIMPLE_SCAP_AM_Workshop_OCSD__April_20-2015.pdf). SIMPLE defines 10 steps toward asset management.The steps are related to six overarching questions concerning asset condition, life-cycle costs, levels of service, risk, optimized investment, and funding strategy, described below.
 
-<figure>
-  <img src="/img/am_steps.png" alt="Asset Management Steps" />
-  <figcaption style="text-align: center;">Figure 1: Asset Management Steps</figcaption>
+<figure style={{textAlign: 'center'}}>
+  <img src="/img/am_steps.png" alt="Asset Management Steps" style={{width: '100%', display: 'block', marginLeft: 'auto', marginRight: 'auto'}} />
+  <figcaption style={{textAlign: 'center'}}>Figure 1: Asset Management Steps</figcaption>
 </figure>
 
 
@@ -117,9 +117,9 @@ The steps described above are clearly interconnected and depend on an understand
 Thus, all levels of documents are also aligned, as illustrated in Figure 1. The asset management (AM) policy is established at an organizational level to define the overall intent, scope, principles, and responsibilities of AM. The AM strategy defines objectives, i.e., the practical implications of the policy, and performance targets within a set timeframe (around 5 years). The AM plan describes the plans to achieve the established objectives for each asset type, including: the state of the infrastructure, desired level of service, lifecycle management strategy and financial strategy. Lastly, the maintenance and renewal plans detail the actions that should be taken in a short time frame (1 year) to operationalize the AM plans [(FCM 2018)](https://fcm.ca/en/resources/mamp/guidebook-how-develop-asset-management-policy-and-strategy).
 
 
-<figure>
-  <img src="/img/am_documents.png" alt="Asset Management Documents" style="width: 50%; display: block; margin-left: auto; margin-right: auto;" />
-  <figcaption style="text-align: center;">Figure 2: Asset Management Documents</figcaption>
+<figure style={{textAlign: 'center'}}>
+  <img src="/img/am_documents.png" alt="Asset Management Documents" style={{width: '50%', display: 'block', marginLeft: 'auto', marginRight: 'auto'}} />
+  <figcaption style={{textAlign: 'center'}}>Figure 2: Asset Management Documents</figcaption>
 </figure>
 
 
