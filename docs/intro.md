@@ -1,8 +1,9 @@
-import React from 'react';
-
 ---
 sidebar_position: 1
 ---
+
+import React from 'react';
+
 
 # Introduction
 
