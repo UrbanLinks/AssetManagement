@@ -49,9 +49,9 @@ A more common and detailed approach is the Facility Condition Index (FCI).
 
 The original and simpler definition of [FCI](https://www.researchgate.net/publication/331207006_Measuring_the_performance_of_assets_a_review_of_the_Facility_Condition_Index) is as follows:
 
-\[
+$$
 FCI = \frac{Deferred \ Maintenance \ (DM)}{Current \ Replacement \ Value \ (CRV)}
-\]
+$$
 
 This ratio, expressed as a percentage, ranges from 0 to 100, where a lower FCI indicates a facility in better condition. Deferred maintenance refers to the cost of maintenance activities that have been delayed and are necessary to bring the asset to its expected condition. 
  The current replacement value is the total cost required to replace the asset at its current level of service.
@@ -63,9 +63,9 @@ This ratio, expressed as a percentage, ranges from 0 to 100, where a lower FCI i
 
 A more recent definition of [FCI](https://www.researchgate.net/publication/331207006_Measuring_the_performance_of_assets_a_review_of_the_Facility_Condition_Index) expands on the first by including additional factors:
 
-\[
+$$
 FCI = \frac{Deferred \ Maintenance + Major \ Rehabilitation \ and \ Replacement + Maintenance \ Recommendations}{Current \ Replacement \ Value \ (CRV)}
-\]
+$$
 
 In this approach, major rehabilitation and replacement costs, along with maintenance recommendations, are added to the deferred maintenance costs. This provides a more comprehensive view of the facility's overall condition.
 
