@@ -101,8 +101,9 @@ Water Environment Research Foundation (WERF) developed the [SIMPLE
   <figcaption><i>Asset Management Steps [(Adapted from WERF 2010)](https://www.waterrf.org/research/projects/sustainable-infrastructure-management-program-learning-environment-simple-version)</i></figcaption>
 </figure>
 
-
-* Assess State of Assets: This step involves identifying the types and locations of assets, which is crucial for planning current and future investments. 
+* Inventory Assets: This first step involves identifying the types and locations of assets, which is crucial for planning current and future investments.
+* Assess State of Assets: Evaluate the current condition of each asset using a variety of techniques.
+* Determine Residual Life: Estimate the remaining useful life of each asset based on their current condition and expected useful life or deterioration curve.
 * Determine Lifecycle Costs: Asset life spans from design to disposal, during which the organization holds financial responsibility. 
 * Define Required Levels of Service: These are parameters reflecting various outcomes the organization aims to deliver, such as safety, customer satisfaction, and environmental acceptability. They should align with customer expectations and broader goals for system sustainability and resilience.
 * Determine Asset Failure Risk: The goal of asset management is to balance performance, costs, and risks, aiming to reduce risks to an acceptable level. 
