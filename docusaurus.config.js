@@ -47,6 +47,8 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/UrbanLinks/AssetManagement/edit/main/',
+            remarkPlugins: [require('remark-math')],
+            rehypePlugins: [require('rehype-katex')],
         },
         blog: {
           showReadingTime: true,
@@ -93,6 +95,14 @@ const config = {
         darkTheme: themes.tomorrownight, // Dark theme
       },
     }),
+    stylesheets: [
+      {
+        href: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css',
+        type: 'text/css',
+        integrity: 'sha384-AfES+niSC6i7g6sTRF5DEzCTK5HTeswW8NG7l1zR2zsEVE+q5KD2Q3epak1d+d+u',
+        crossorigin: 'anonymous',
+      },
+    ],
 };
 
 export default config;
