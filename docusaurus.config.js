@@ -97,9 +97,10 @@ const config = {
     }),
     stylesheets: [
       {
-        href: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css',
+        href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
         type: 'text/css',
-        integrity: 'sha384-AfES+niSC6i7g6sTRF5DEzCTK5HTeswW8NG7l1zR2zsEVE+q5KD2Q3epak1d+d+u',
+        integrity:
+          'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
         crossorigin: 'anonymous',
       },
     ],

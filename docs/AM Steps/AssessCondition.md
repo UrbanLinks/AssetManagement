@@ -53,11 +53,12 @@ FCI = \frac{Deferred \ Maintenance \ (DM)}{Current \ Replacement \ Value \ (CRV)
 $$
 This ratio, expressed as a percentage, ranges from 0 to 100, where a lower FCI indicates a facility in better condition. Deferred maintenance refers to the cost of maintenance activities that have been delayed and are necessary to bring the asset to its expected condition. 
  The current replacement value is the total cost required to replace the asset at its current level of service.
+ 
  The FCI result is usually categorised in three or four levels, depending on the type of facility. [Common thresholds](https://www.researchgate.net/publication/331207006_Measuring_the_performance_of_assets_a_review_of_the_Facility_Condition_Index) are:
-––good: 0−5%;
-––fair: 5−10%;
-––poor: 10−30%;
-––critical: 30−100%.
+*good: 0−5%;
+*fair: 5−10%;
+*poor: 10−30%;
+*critical: 30−100%.
 
 A more recent definition of [FCI](https://www.researchgate.net/publication/331207006_Measuring_the_performance_of_assets_a_review_of_the_Facility_Condition_Index) expands on the first by including additional factors:
 $$
