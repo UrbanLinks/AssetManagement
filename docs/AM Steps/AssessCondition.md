@@ -6,11 +6,11 @@ sidebar_position: 2
 
 Once assets are identified and located, assessing their condition is essential to planning current and future investment needs. The accuracy and frequency of the condition assessments can also follow a risk-based hierarchy as suggested for the inventory. It is important that decision-makers are aware of the types of assessment techniques, costs, as well as the results and accuracy they provide, as this will shape their applicability. Age can provide an initial estimate of condition. Maintenance and repair records, such as number of breaks or pothole repairs, provide more detailed feedback on specific asset condition. Visual assessment can be a low-cost, however subjective, solution for accessible assets. Methods for more detailed condition assessment will depend on the type of asset. Newer technologies apply artificial intelligence to automatically collect data and rate condition. Examples of assessment techniques, both common place and novel are discussed below.
 
-Assessing the condition of assets is essential because even assets of the same type can deteriorate at different rates. It is important to consider various aspects beyond just the physical condition. [Hokstad et al. (2010)](https://www.sintef.no/globalassets/upload/teknologi_og_samfunn/sikkerhet-og-palitelighet/rapporter/sintef-a15322-ageing-and-life-extension-for-offshore-facilities-in-general-and-for-specific-systems.pdf) identified three types of ageing: material degradation, obsolescence, and organizational issues. Material degradation can be influenced by factors such as material properties, operating conditions, and environmental conditions. Obsolescence includes aspects such as outdated equipment, the emergence of new technologies, changes in requirements or regulations, and evolving needs. Organizational issues encompass challenges like knowledge transfer, reorganization, and personnel ageing.
+Assessing the condition of assets is essential because even assets of the same type can deteriorate at different rates. It is important to consider various aspects beyond just the physical condition. [Hokstad et al. (2010)](https://www.sintef.no/globalassets/upload/teknologi_og_samfunn/sikkerhet-og-palitelighet/rapporter/sintef-a15322-ageing-and-life-extension-for-offshore-facilities-in-general-and-for-specific-systems.pdf) identified three types of ageing: material degradation, obsolescence, and organizational issues. Material degradation can be influenced by factors such as material properties, operating conditions, and environmental conditions. Obsolescence includes aspects such as outdated equipment, the emergence of new technologies, changes in requirements or regulations, and evolving needs. Organizational issues encompass challenges like knowledge transfer, reorganization, and personnel ageing. Despite the multifaceted nature of asset condition, many organizations and utilities still consider only physical condition, and rely solely on the age of the asset.
 
 ## Bias in Condition Ratings
 
-Despite the multifaceted nature of asset condition, many organizations and utilities still consider only physical codnition, and rely solely on the age of the asset. [Canadian water and wastewater utilities](http://canadianinfrastructure.ca/downloads/Canadian_Infrastructure_Report_2016.pdf) have indicated that the most common source of condition information for linear assets is proxy information such as age and pipe material. For non-linear assets, the opinion of municipal staff is the most common source of condition information.  The latter clearly leads to subjective condition assessments, where a motivational bias towards greater local investment can skew results. To avoid this bias, a third party could conduct assessments instead. However, even if a consultant is hired, they are being remunerated by the municipality, and the success of their work is determined by the satisfaction of the client.
+ [Canadian water and wastewater utilities](http://canadianinfrastructure.ca/downloads/Canadian_Infrastructure_Report_2016.pdf) have indicated that the most common source of condition information for linear assets is proxy information such as age and pipe material. For non-linear assets, the opinion of municipal staff is the most common source of condition information.  The latter clearly leads to subjective condition assessments, where a motivational bias towards greater local investment can skew results. To avoid this bias, a third party could conduct assessments instead. However, even if a consultant is hired, they are being remunerated by the municipality, and the success of their work is determined by the satisfaction of the client.
 
 The availability bias, whereby the assessor’s estimation of condition is more dependent on memory than an evaluation of possible events, can also affect results. An objective analysis based on visual inspections and relevant data, regardless of the memory of issues arising in the past, could provide more impartial results.  However, availability of data is still an issue for many utilities. For most municipalities embarking on asset management, this is the first time an asset inventory is created. This means the install date of the asset might even be unknown, and previous maintenance has likely not been recorded digitally.
 
@@ -29,7 +29,7 @@ Facility assets are commonly assessed through visual inspection. Generally, a ra
 | 2      | Marginal  | Defective or deteriorated component(s) in need of replacement; exceeded useful life |
 | 1      | Poor      | Critically damaged component(s) or in need of immediate repair; well past useful life |
 
-This rating scale is quite generic and could be applied to any type of asset. Since this can create more space for subjectivity, condition ratings for specific asset types are useful. As another example, the condition rating for shell, also defined by the [US DOT](https://www.transit.dot.gov/sites/fta.dot.gov/files/docs/Facility%20Performance%20Assessment%20Guidebook.pdf), is shown below. Here, the types of defects are clearly defined, as are different facets of conditions, including health and safety concerns.
+This rating scale is quite generic and could be applied to any type of asset. Since this can create more space for subjectivity, condition ratings for specific asset types are useful. As another example, the condition rating for shell assets, also defined by the [US DOT](https://www.transit.dot.gov/sites/fta.dot.gov/files/docs/Facility%20Performance%20Assessment%20Guidebook.pdf), is shown below. Here, the types of defects are clearly defined, as are different facets of conditions, including health and safety concerns.
 
 | Rating | Condition | Description |
 |--------|-----------|-------------|
@@ -53,12 +53,12 @@ FCI = \frac{Deferred \ Maintenance \ (DM)}{Current \ Replacement \ Value \ (CRV)
 $$
 This ratio, expressed as a percentage, ranges from 0 to 100, where a lower FCI indicates a facility in better condition. Deferred maintenance refers to the cost of maintenance activities that have been delayed and are necessary to bring the asset to its expected condition. 
  The current replacement value is the total cost required to replace the asset at its current level of service.
- 
+
  The FCI result is usually categorised in three or four levels, depending on the type of facility. [Common thresholds](https://www.researchgate.net/publication/331207006_Measuring_the_performance_of_assets_a_review_of_the_Facility_Condition_Index) are:
-*good: 0−5%;
-*fair: 5−10%;
-*poor: 10−30%;
-*critical: 30−100%.
+* good: 0−5%;
+* fair: 5−10%;
+* poor: 10−30%;
+* critical: 30−100%.
 
 A more recent definition of [FCI](https://www.researchgate.net/publication/331207006_Measuring_the_performance_of_assets_a_review_of_the_Facility_Condition_Index) expands on the first by including additional factors:
 $$
