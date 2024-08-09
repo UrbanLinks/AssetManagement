@@ -29,7 +29,7 @@ Facility assets are commonly assessed through visual inspection. Generally, a ra
 | 2      | Marginal  | Defective or deteriorated component(s) in need of replacement; exceeded useful life |
 | 1      | Poor      | Critically damaged component(s) or in need of immediate repair; well past useful life |
 
-This rating scale is quite generic and could be applied to any type of asset. Since this can create more space for subjectivity, condition ratings for specific asset types are useful. As another example, the condition rating for shell, also defined by the [US DOT]([US Department of Transportation](https://www.transit.dot.gov/sites/fta.dot.gov/files/docs/Facility%20Performance%20Assessment%20Guidebook.pdf)), is shown below. Here, the types of defects are clearly defined, as are different facets of conditions, including health and safety concerns.
+This rating scale is quite generic and could be applied to any type of asset. Since this can create more space for subjectivity, condition ratings for specific asset types are useful. As another example, the condition rating for shell, also defined by the [US DOT](https://www.transit.dot.gov/sites/fta.dot.gov/files/docs/Facility%20Performance%20Assessment%20Guidebook.pdf), is shown below. Here, the types of defects are clearly defined, as are different facets of conditions, including health and safety concerns.
 
 | Rating | Condition | Description |
 |--------|-----------|-------------|
@@ -48,11 +48,9 @@ A simple approach is to average the ratings of each component (e.g., according t
 A more common and detailed approach is the Facility Condition Index (FCI). 
 
 The original and simpler definition of [FCI](https://www.researchgate.net/publication/331207006_Measuring_the_performance_of_assets_a_review_of_the_Facility_Condition_Index) is as follows:
-
 $$
 FCI = \frac{Deferred \ Maintenance \ (DM)}{Current \ Replacement \ Value \ (CRV)}
 $$
-
 This ratio, expressed as a percentage, ranges from 0 to 100, where a lower FCI indicates a facility in better condition. Deferred maintenance refers to the cost of maintenance activities that have been delayed and are necessary to bring the asset to its expected condition. 
  The current replacement value is the total cost required to replace the asset at its current level of service.
  The FCI result is usually categorised in three or four levels, depending on the type of facility. [Common thresholds](https://www.researchgate.net/publication/331207006_Measuring_the_performance_of_assets_a_review_of_the_Facility_Condition_Index) are:
@@ -62,11 +60,9 @@ This ratio, expressed as a percentage, ranges from 0 to 100, where a lower FCI i
 ––critical: 30−100%.
 
 A more recent definition of [FCI](https://www.researchgate.net/publication/331207006_Measuring_the_performance_of_assets_a_review_of_the_Facility_Condition_Index) expands on the first by including additional factors:
-
 $$
 FCI = \frac{Deferred \ Maintenance + Major \ Rehabilitation \ and \ Replacement + Maintenance \ Recommendations}{Current \ Replacement \ Value \ (CRV)}
 $$
-
 In this approach, major rehabilitation and replacement costs, along with maintenance recommendations, are added to the deferred maintenance costs. This provides a more comprehensive view of the facility's overall condition.
 
 Establishing all of these costs can be a complex task. So in some cases only major rehabilitation and replacement is considered. And, as a rule of thumb, all assets in poor or marginal condition may be considered to be requiring rehabilitation or replacement.
