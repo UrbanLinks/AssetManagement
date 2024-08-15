@@ -66,17 +66,17 @@ The [City of Toronto](https://www.toronto.ca/legdocs/mmis/2008/ex/bgrd/backgroun
 | Water Pipe Description                                               | EUL (Years) |
 |-----------------------------------------------------------|-------------|
 | Cast Iron, Pit Cast (<1950), Original, Diam = 150 mm      | 60-80       |
-| Cast Iron, Pit Cast (<1950), Original, Diam > 150 mm      | 70-90       |
+| Cast Iron, Pit Cast (<1950), Original, Diam \> 150 mm      | 70-90       |
 | Cast Iron, Pit Cast (<1950), Cleaned & Lined, Diam = 150 mm | 15-25       |
-| Cast Iron, Pit Cast (<1950), Cleaned & Lined, Diam > 150 mm | 25-35       |
+| Cast Iron, Pit Cast (<1950), Cleaned & Lined, Diam \> 150 mm | 25-35       |
 | Cast Iron, Spun Cast (>=1950), Original, Diam = 150 mm    | 20-40       |
-| Cast Iron, Spun Cast (>=1950), Original, Diam > 150 mm    | 30-50       |
+| Cast Iron, Spun Cast (>=1950), Original, Diam \> 150 mm    | 30-50       |
 | Cast Iron, Spun Cast (>=1950), Cleaned & Lined, Diam = 150 mm | 5-10        |
-| Cast Iron, Spun Cast (>=1950), Cleaned & Lined, Diam > 150 mm | 10-15       |
+| Cast Iron, Spun Cast (>=1950), Cleaned & Lined, Diam \> 150 mm | 10-15       |
 | Ductile Iron, Diam = 150 mm                               | 40-60       |
-| Ductile Iron, Diam > 150 mm                               | 50-70       |
+| Ductile Iron, Diam \> 150 mm                               | 50-70       |
 | Ductile Iron, Cathodically Protected, Diam = 150 mm       | 15-25       |
-| Ductile Iron, Cathodically Protected, Diam > 150 mm       | 25-35       |
+| Ductile Iron, Cathodically Protected, Diam \> 150 mm       | 25-35       |
 | Polyvinyl Chloride, All Sizes                             | 70-90       |
 | Metro Trunk and Steel, All Sizes                          | 80-100      |
 | Other material (concrete, copper, AC, etc.), All Sizes    | 40-60       |
@@ -84,10 +84,10 @@ The [City of Toronto](https://www.toronto.ca/legdocs/mmis/2008/ex/bgrd/backgroun
 | Sewer Pipe Description                                       | EUL (Years) |
 |---------------------------------------------------|-------------|
 | Concrete, Diam ≤ 450 mm                           | 50-70       |
-| Concrete, Diam > 450 mm                           | 70-90       |
+| Concrete, Diam \> 450 mm                           | 70-90       |
 | Brick, All Sizes                                  | 70-90       |
 | Vitrified Clay, Diam ≤ 375 mm                     | 50-70       |
-| Vitrified Clay, Diam > 375 mm                     | 60-80       |
+| Vitrified Clay, Diam \> 375 mm                     | 60-80       |
 | Polyvinylchloride, All Sizes                      | 20-30       |
 | Asbestos Cement, All Sizes                        | 80-90       |
 | Other material, All Sizes                         | 20-30       |
