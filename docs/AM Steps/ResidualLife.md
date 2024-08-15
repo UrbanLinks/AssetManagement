@@ -54,12 +54,13 @@ The [province of British Columbia](https://www2.gov.bc.ca/assets/gov/housing-and
 The [City of Toronto](https://www.toronto.ca/wp-content/uploads/2019/04/9659-TS_Pavement-Design-and-Rehabilitation-Guideline.pdf) established EUL for pavement according to the current condition and type of rehabilitation performed, as shown below.
 | Activity Category | Activity Name                           | Activity Description                                      | EUL (Yrs)               |
 |-------------------|-----------------------------------------|----------------------------------------------------------|--------------------------------------------|
-| Construction      | Reconstruction                          | Rebuild entire pavement structure, improve drainage       | 30 for flexible pavement <br> 30 for rigid pavement |
-| Construction      | Partial Pavement Reconstruction         | Rebuild flexible/rigid pavement layers                    | 25 for flexible <br> 30 for rigid          |
+| Construction      | Reconstruction                          | Rebuild entire pavement structure, improve drainage       | 30 for flexible pavement <br /> 30 for rigid pavement |
+| Construction      | Partial Pavement Reconstruction         | Rebuild flexible/rigid pavement layers                    | 25 for flexible <br /> 30 for rigid          |
 | Rehabilitation    | Cold Recycling (Flexible Pavements on local roads) | Recycle in-place Hot Mix Asphalt (HMA) layers (full depth)               | 20-25+                                     |
 | Rehabilitation    | Resurfacing                             | Replace 2 lifts HMA and base repairs                      | 20 - 25                                    |
 | Rehabilitation    | 'Mill and Pave' (1 lift)                | Replace 1 lift of HMA                                     | 18 - 22                                    |
 | Rehabilitation    | Overlay (1 lift)                        | Place 1 lift HMA over existing surface                    | 10 - 20                                    |
+
 
 The [City of Toronto](https://www.toronto.ca/legdocs/mmis/2008/ex/bgrd/backgroundfile-16566.pdf) also analysed the life expectancies of water and sewer pipes of different materials, to establish EUL, as sumamrized below. 
 
