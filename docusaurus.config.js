@@ -45,17 +45,15 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/UrbanLinks/AssetManagement/edit/main/',
-            remarkPlugins: [require('remark-math')],
-            rehypePlugins: [require('rehype-katex')],
+          // editUrl:'https://github.com/UrbanLinks/AssetManagement/edit/main/',
+          remarkPlugins: [require('remark-math')],
+          rehypePlugins: [require('rehype-katex')],
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/UrbanLinks/AssetManagement/edit/main/blog/',
+          //editUrl:'https://github.com/UrbanLinks/AssetManagement/edit/main/blog/',
           remarkPlugins: [require('remark-math')],
           rehypePlugins: [require('rehype-katex')],
         },
