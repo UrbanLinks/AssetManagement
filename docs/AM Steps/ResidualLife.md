@@ -5,11 +5,11 @@ sidebar_position: 3
 # 3. Determine Residual Life
 
 The residual life of an asset is the remaining period of time during which the asset can be in service before being replaced or decommissioning. The residual life may be influenced by different aspects, such as:
-* Financial: The asset is considered fully depreciated in accounting terms, meaning it has no remaining book value, even if it still functions.
-* Physical: The asset has deteriorated to the point where it is no longer operational or functional.
-* Service Level: The asset no longer meets the performance or quality requirements of stakeholders, even if it still operates.
-* Capacity: The asset's original design capacity has been exceeded, rendering it insufficient for current demands.
-* Economic: The asset is no longer the most cost-effective option, and continuing to operate it is more expensive than alternatives.
+* **Financial**: The asset is considered fully depreciated in accounting terms, meaning it has no remaining book value, even if it still functions.
+* **Physical**: The asset has deteriorated to the point where it is no longer operational or functional.
+* **Service Level**: The asset no longer meets the performance or quality requirements of stakeholders, even if it still operates.
+* **Capacity**: The asset's original design capacity has been exceeded, rendering it insufficient for current demands.
+* **Economic**: The asset is no longer the most cost-effective option, and continuing to operate it is more expensive than alternatives.
 
 Herein the focus will be on determining physical deterioration. This deterioration is a function of the asset’s intrinsic physical characteristics, environmental factors and operational [factors](https://www.sciencedirect.com/science/article/abs/pii/S0043135419307006?via%3Dihub). Deterioration can be simplified by assuming values of "Expected Useful Life" for each asset types or it can be modeled.
 
@@ -27,6 +27,7 @@ The Canada-wide averages for [road assets in 2020](https://www150.statcan.gc.ca/
 - **Local roads**: 29 years
 - **Lanes and alleys**: 31 years
 - **Sidewalks**: 32 years
+
 Similarly, Canada-wide averages for [potable water assets in 2020](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3410019901) were:
 - **Water treatment facilities**: 33 years
 - **Water reservoirs (including dams) before intake**: 27 years
@@ -62,7 +63,7 @@ The [City of Toronto](https://www.toronto.ca/wp-content/uploads/2019/04/9659-TS_
 | Rehabilitation    | Overlay (1 lift)                        | Place 1 lift HMA over existing surface                    | 10 - 20                                    |
 
 
-The [City of Toronto](https://www.toronto.ca/legdocs/mmis/2008/ex/bgrd/backgroundfile-16566.pdf) also analysed the life expectancies of water and sewer pipes of different materials, to establish EUL, as sumamrized below. 
+The [City of Toronto](https://www.toronto.ca/legdocs/mmis/2008/ex/bgrd/backgroundfile-16566.pdf) also analysed the life expectancies of water and sewer pipes of different materials, to establish EUL, as summarized below. 
 
 | Water Pipe Description                                               | EUL (Years) |
 |-----------------------------------------------------------|-------------|
