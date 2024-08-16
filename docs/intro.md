@@ -33,11 +33,11 @@ https://calgaryherald.com/news/local-news/how-did-calgarys-water-crisis-unfold-a
 The development of public infrastructure is generally aligned with local expansion
 and growth. Investment naturally accompanies growth; however, even as growth
 subsides, investment must continue in order to maintain a good condition of infrastructure.
-It is estimated that the world will need to invest around '$3.3 trillion' annually
+It is estimated that the world will need to invest around \$3.3 trillion annually
 to keep pace with projected growth. And if current investment rates remain
 unchanged, the funding gap will grow. This does not account for the investment
 needed to meet basic infrastructure needs in lower-income regions as well as mitigate
-climate change and cope with its effects. Another '$1.1 trillion' per year would
+climate change and cope with its effects. Another \$1.1 trillion per year would
 be required to meet the United Nations Sustainable Development Goals in developing
 countries [McKinsey Global Institute 2016](https://www.un.org/pga/71/wp-content/uploads/sites/40/2017/06/Bridging-Global-Infrastructure-Gaps-Full-report-June-2016.pdf).
 
