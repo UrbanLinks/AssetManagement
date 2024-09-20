@@ -193,8 +193,8 @@ Statistical/Empirical models rely on historical data to predict asset deteriorat
 #### Deterministic Models
 Deterministic models can be further categorized into Regression and Classification models. **Regression** models predict a numerical value, such as the rate of failure or the size of a defect. **Classification models**, on the other hand, predict a class, such as break status or condition rating.
 
-##### Regression Models
-**Linear Deterioration**
+**Regression Models**
+
 One of the simplest types of deterministic deterioration models is the linear temporal regression, i.e. the deterioration is assumed to increase linearly with time.
 For example, [Kettler and Goulter (1985)](https://doi.org/10.1139/l85-030) defined the following equation to predict pipe breaks.
 
@@ -204,7 +204,7 @@ $$
 
 Where:
 - **N** is the number of breaks per year.
-- **k**** is a regression coefficient.
+- **k** is a regression coefficient.
 - **Age** refers to the time since the pipe was installed.
 Note that this is a very simple equation, which assumes the same number of breaks would happen each year for a group of pipes (e.g., all cast-iron pipes in the system), and no other factors are accounted for.
 
@@ -250,7 +250,7 @@ While for a simple linear regression like this, **k** can be calculated directly
 
 Microsoft Excel's **Solver** tool can be used to find the best-fit equation for a given dataset by minimizing the sum of squared errors. The main steps are as follows:
 
-1. **Define the $$k_0$$ Coefficient**: Set aside a single cell in the spreadsheet to hold the value of the $$k_0$$ coefficient. If your equation has more coefficients, set one cell for each. At this points you should provide an initial guess of the value of each coefficient.
+1. **Define the k Coefficient**: Set aside a single cell in the spreadsheet to hold the value of the `k` coefficient. If your equation has more coefficients, set one cell for each. At this points you should provide an initial guess of the value of each coefficient.
    
 2. **Create Predicted Values**: Assuming you already have the input data in a spreadsheet, add a column next to your existing data for the target (in this case, "N_predicted", predicted number of breaks). Insert the formula, e.g., `N = k * Age`, where `k` is the coefficient assumed in the first step and Age is the actual age from the dataset.
 
@@ -264,7 +264,7 @@ Microsoft Excel's **Solver** tool can be used to find the best-fit equation for 
 
 :::
 
-**Nonlinear deterioration**
+
 Because assets usually deteriorate more rapidly as they age, nonlinear regressions for deterioration, such as assuming exponential deterioration, are commonly applied.
 
 For example, the [Highway Pavement Management Application developed by Stantec and used by Alberta Transportation](https://doi.org/10.6135/ijprt.org.tw/2013.6(6).714) uses the following model to predict the International Roughness Index (IRI) of pavement sections
@@ -333,17 +333,13 @@ plt.legend()
 plt.title('IRI Curve')
 plt.show()
 ```
-If 
+You can copy and run this code in a google colab notebook
 
 :::
 
-<iframe 
-    src="https://hub.ovh2.mybinder.org/user/urbanlinks-assetmanagement-qlx8whb7/doc/tree/example_code/IRI_Prediction.ipynb" 
-    width="100%" 
-    height="500">
-</iframe>
 
-##### Classification Models
+**Classification Models**
+
 explain logistic regression
 used to classify wang 2009 (nishiyama filion paper)
 
