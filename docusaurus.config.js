@@ -65,7 +65,7 @@ const config = {
   ],
 
   // Add the @datalayer/jupyter-ui theme here
-  themes: ['@datalayer/docusaurus-theme-jupyter-ui'],
+  //themes: ['@datalayer/docusaurus-theme-jupyter-ui'],//
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
