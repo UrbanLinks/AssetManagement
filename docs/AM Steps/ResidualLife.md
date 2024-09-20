@@ -260,7 +260,7 @@ Microsoft Excel's **Solver** tool can be used to find the best-fit equation for 
 
 1. **Define the \( k \) Coefficient**: Set aside a single cell in the spreadsheet to hold the value of the \( k \) coefficient. If your equation has more coefficients, set one cell for each. At this points you should provide an initial guess of the value of each coefficient.
    
-2. **Create Predicted Values**: Assuming, you already have the input data in a spreadsheet, add a column next to your existing data for the target (in this case N_{\text{predicted}}, predicted number of breaks). Insert the formula, e.g. \( N = k \times \text{Age} \), where \( k \) is the coefficient assumed in the first step and Age is the actual age from the dataset.
+2. **Create Predicted Values**: Assuming you already have the input data in a spreadsheet, add a column next to your existing data for the target (in this case, "N_predicted", predicted number of breaks). Insert the formula, e.g., `N = k * Age`, where `k` is the coefficient assumed in the first step and Age is the actual age from the dataset.
 
 3. **Calculate Squared Differences**: In another column, compute the squared differences between the actual and predicted target, e.g.  \( (N_{\text{observed}} - N_{\text{predicted}})^2 \).
 
