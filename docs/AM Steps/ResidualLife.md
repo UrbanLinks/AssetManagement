@@ -2,7 +2,6 @@
 sidebar_position: 3
 ---
 
-import JupyterCell from '@theme/JupyterCell';
 
 # 3. Determine Residual Life
 
