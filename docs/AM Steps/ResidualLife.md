@@ -248,7 +248,7 @@ While for a simple linear regression like this, **k** can be calculated directly
 
 :::tip **Regression with Solver in MS Excel**
 
-Microsoft Excel's **Solver** tool can be used to find the best-fit equation for a given dataset by minimizing the sum of squared errors. Here’s how to do this:
+Microsoft Excel's **Solver** tool can be used to find the best-fit equation for a given dataset by minimizing the sum of squared errors. The main steps are as follows:
 
 1. **Define the $$k_0$$ Coefficient**: Set aside a single cell in the spreadsheet to hold the value of the $$k_0$$ coefficient. If your equation has more coefficients, set one cell for each. At this points you should provide an initial guess of the value of each coefficient.
    
@@ -278,15 +278,70 @@ Where:
 - **Age** is the life in years since the last rehabilitation or construction activity.
 - **A**, **B**, and **C** are coefficients defined based on the treatment type.
 
-Given a dataset containing IRI and age observations the parameters **IRI₀** and **Age** can be found with the same least square approach in Excel mentioned before. As an alternative a curve fitting function could also be used in python. An example is provided below. 
+Given a dataset containing IRI and age observations the parameters **IRI₀** and **Age** can be found with the same least square approach in Excel mentioned before. As an alternative a curve fitting function could also be used in python.  
+
+:::tip **Regression with Python**
+
+A curve fitting function in python can be defined as follows:
+
+1. **Import Required Libraries**: Load the necessary Python libraries for handling arrays, mathematical operations, curve fitting, and plotting graphs.
+
+2. **Define the IRI Model**: Create a custom function to represent the mathematical model for predicting IRI based on age and parameters.
+
+3. **Load Example Data**: Provide the observed age and IRI data as `numpy` arrays.
+
+4. **Perform Curve Fitting**: Use the `curve_fit` function to estimate the parameters of the IRI model by fitting it to the observed data.
+
+5. **Extract the Fitted Parameters**: Retrieve the optimized values of the parameters from the curve fitting.
+
+6. **Plot the Data and Fitted Curve**: Plot both the observed data and the fitted curve to visually compare the model's prediction with actual data.
+
+An example code is provided below
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.optimize import curve_fit
+
+# Define the equation
+def iri_model(age, IRI_0, A, B, C):
+    return IRI_0 + np.exp(A - B * C ** np.log(age))
+
+# Load example data
+age_data = np.array([1, 5, 10, 15, 20])  
+iri_data = np.array([2, 2.25, 2.6, 4, 5.1]) 
+
+# Use curve fitting to find the coefficients
+initial_guess = [1, 1, 1, 1]  # Initial guess for IRI_0, A, B, C
+params, covariance = curve_fit(iri_model, age_data, iri_data, p0=initial_guess, maxfev=1000)
+
+# Extract the fitted parameters
+IRI_0, A, B, C = params
+
+# Print the fitted parameters
+print(f"Fitted Parameters:\nIRI_0 = {IRI_0}\nA = {A}\nB = {B}\nC = {C}")
+
+# Plotting the data and the fitted curve
+age_range = np.linspace(min(age_data), max(age_data), 100)
+fitted_iri = iri_model(age_range, IRI_0, A, B, C)
+
+plt.scatter(age_data, iri_data, label='Observed Data', color='red')
+plt.plot(age_range, fitted_iri, label='Fitted Curve', color='blue')
+plt.xlabel('Age')
+plt.ylabel('IRI')
+plt.legend()
+plt.title('IRI Curve')
+plt.show()
+```
+If 
+
+:::
 
 <iframe 
-    src="https://colab.research.google.com/drive/1DX8OZ-L5Aua2gDDSHPAzrLoVGe3VsQmA?usp=sharing" 
+    src="https://hub.ovh2.mybinder.org/user/urbanlinks-assetmanagement-qlx8whb7/doc/tree/example_code/IRI_Prediction.ipynb" 
     width="100%" 
     height="500">
 </iframe>
-
-
 
 ##### Classification Models
 explain logistic regression
