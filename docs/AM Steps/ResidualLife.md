@@ -191,9 +191,6 @@ Statistical/Empirical models rely on historical data to predict asset deteriorat
 **Deterministic** models predict a single deterioration result and ignore uncertainty, such as an asset's condition index within 5 years. Whereas **Probabilistic models** predict the probability of various states, such as the likelihood of an asset to reach a certain condition index within 5 years.
 
 #### Deterministic Models
-Deterministic models can be further categorized into Regression and Classification models. **Regression** models predict a numerical value, such as the rate of failure or the size of a defect. **Classification models**, on the other hand, predict a class, such as break status or condition rating.
-
-**Regression Models**
 
 One of the simplest types of deterministic deterioration models is the linear temporal regression, i.e. the deterioration is assumed to increase linearly with time.
 For example, [Kettler and Goulter (1985)](https://doi.org/10.1139/l85-030) defined the following equation to predict pipe breaks.
@@ -336,26 +333,6 @@ plt.show()
 You can copy and run this code in a google colab notebook
 
 :::
-
-
-**Classification Models**
-
-explain logistic regression
-used to classify wang 2009 (nishiyama filion paper)
-
-
-
-HDM-4
-Jain_HDM4
-
-$$
-Delta RI = Kgp...
-$$
-
-
-Hu recent review study
-table 3 - deterministic studies
-
 
 #### Probabilistic Models
 
