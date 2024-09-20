@@ -334,6 +334,7 @@ You can copy and run this code in a google colab notebook
 
 :::
 
+<!--
 #### Probabilistic Models
 
 explain probability distribution
@@ -355,3 +356,4 @@ Hu recent review study
 table 6 
 
 nishiyama fuzzy markov
+-->
