@@ -198,17 +198,14 @@ One of the simplest types of deterministic deterioration models is the linear te
 For example, [Kettler and Goulter (1985)](https://doi.org/10.1139/l85-030) defined the following equation to predict pipe breaks.
 
 $$
-N = k_0 \cdot \text{Age}
+N = k \cdot \text{Age}
 $$
 
 Where:
 - **N** is the number of breaks per year.
-- **k_0** is a regression coefficient.
+- **k**** is a regression coefficient.
 - **Age** refers to the time since the pipe was installed.
 Note that this is a very simple equation, which assumes the same number of breaks would happen each year for a group of pipes (e.g., all cast-iron pipes in the system), and no other factors are accounted for.
-
-
-Here is the content formatted in Markdown with the equation in proper LaTeX:
 
 A linear equation such as this can easily be defined with two points. 
 For example, let's consider the following two data points:
@@ -218,7 +215,7 @@ For example, let's consider the following two data points:
 | 0                    | 0           |
 | 270                  | 22          |
 
-With these two points, the slope `k` of the line can be calculated as:
+With these two points, the slope **k**** of the line can be calculated as:
 
 $$
 k = \frac{270 - 0}{22 - 0} = 12.27
@@ -240,25 +237,19 @@ However, in reality, there would be multiple data points, and the best-fit line 
 | 190                  | 20          |
 | 270                  | 22          |
 
-To find the line that best fits this data, the difference between the predicted breaks using the line equation and the actual observed breaks would have to be minimized. The equation for this line could be written as:
-
-$$
-N = k \cdot Age
-$$
-
-Where \( k \) is the slope of the line. For each data point, the predicted number of breaks is compared to the actual observed number of breaks, and the difference between them is squared to avoid negative differences cancelling out positive ones. To minimize this difference, one common approach is the **least squares method**, which minimizes the sum of squared differences between the observed and predicted values:
+To find the line that best fits this data, the difference between the predicted breaks using the line equation and the actual observed breaks would have to be minimized. For each data point, the predicted number of breaks is compared to the actual observed number of breaks, and the difference between them is squared to avoid negative differences cancelling out positive ones. To minimize this difference, one common approach is the **least squares method**, which minimizes the sum of squared differences between the observed and predicted values:
 
 $$
 \text{Sum of Squares} = \sum (N_{\text{observed}} - N_{\text{predicted}})^2
 $$
 
-While for a simple linear regression like this, `k` can be calculated directly, for more complex equations or when additional variables are involved, an iterative process may be needed. In such cases, the coefficients in the equation are adjusted iteratively to minimize the error until the best-fit line is found. This approach is often used in non-linear regressions or when multiple variables affect the outcome.
+While for a simple linear regression like this, **k** can be calculated directly, for more complex equations or when additional variables are involved, an iterative process may be needed. In such cases, the coefficients in the equation are adjusted iteratively to minimize the error until the best-fit line is found. This approach is often used in non-linear regressions or when multiple variables affect the outcome.
 
 :::tip **Regression with Solver in MS Excel**
 
 Microsoft Excel's **Solver** tool can be used to find the best-fit equation for a given dataset by minimizing the sum of squared errors. Here’s how to do this:
 
-1. **Define the `k` Coefficient**: Set aside a single cell in the spreadsheet to hold the value of the `k` coefficient. If your equation has more coefficients, set one cell for each. At this points you should provide an initial guess of the value of each coefficient.
+1. **Define the $$k_0$$ Coefficient**: Set aside a single cell in the spreadsheet to hold the value of the $$k_0$$ coefficient. If your equation has more coefficients, set one cell for each. At this points you should provide an initial guess of the value of each coefficient.
    
 2. **Create Predicted Values**: Assuming you already have the input data in a spreadsheet, add a column next to your existing data for the target (in this case, "N_predicted", predicted number of breaks). Insert the formula, e.g., `N = k * Age`, where `k` is the coefficient assumed in the first step and Age is the actual age from the dataset.
 
@@ -286,7 +277,7 @@ Where:
 - **Age** is the life in years since the last rehabilitation or construction activity.
 - **A**, **B**, and **C** are coefficients defined based on the treatment type.
 
-Given a dataset containing IRI and age observations the parameters \( IRI_0 \) and \( Age \) can be found with the same least square approach in Excel mentioned before. As an alternative a curve fitting function could also be used in python. An example is provided below. 
+Given a dataset containing IRI and age observations the parameters **IRI₀** and **Age** can be found with the same least square approach in Excel mentioned before. As an alternative a curve fitting function could also be used in python. An example is provided below. 
 
 <iframe 
     src="https://colab.research.google.com/drive/1DX8OZ-L5Aua2gDDSHPAzrLoVGe3VsQmA?usp=sharing" 
