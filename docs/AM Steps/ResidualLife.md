@@ -2,6 +2,8 @@
 sidebar_position: 3
 ---
 
+import JupyterCell from '@theme/JupyterCell';
+
 # 3. Determine Residual Life
 
 The residual life of an asset is the remaining period of time during which the asset can be in service before being replaced or decommissioning. The residual life may be influenced by different aspects, such as:
@@ -266,7 +268,7 @@ Microsoft Excel's **Solver** tool can be used to find the best-fit equation for 
 **Nonlinear deterioration**
 Because assets usually deteriorate more rapidly as they age, nonlinear regressions for deterioration, such as assuming exponential deterioration, are commonly applied.
 
-For example, the Highway Pavement Management Application developed by Stantec and used by Alberta Transportation(https://doi.org/10.6135/ijprt.org.tw/2013.6(6).714) uses the following model to predict the International Roughness Index (IRI) of pavement sections
+For example, the [Highway Pavement Management Application developed by Stantec and used by Alberta Transportation](https://doi.org/10.6135/ijprt.org.tw/2013.6(6).714) uses the following model to predict the International Roughness Index (IRI) of pavement sections
 
 $$
 IRI = IRI_0 + e^{A - B \times C^{\ln(Age)}}
