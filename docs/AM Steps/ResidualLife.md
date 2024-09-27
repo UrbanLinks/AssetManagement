@@ -188,7 +188,7 @@ Pipe deterioration models, like those used for pavements, are rarely purely mech
 ### Statistical Models
 
 Statistical/Empirical models rely on historical data to predict asset deterioration. They are generally more commonly applied as the data collection is simpler than that for mechanistic models, as it uses the best available data and relies on proxies or related factors, rather then specific physical properties. For example, in a statistical model a coefficient for each type of material may be assumed rather than measured. Statistical models can be largely classified into two groups Deterministic or Probabilistic. 
-**Deterministic** models predict a single deterioration result and ignore uncertainty, such as an asset's condition index within 5 years. Whereas **Probabilistic models** predict the probability of various states, such as the likelihood of an asset to reach a certain condition index within 5 years.
+**Deterministic** models predict a single deterioration result and ignore uncertainty, such as an asset's condition index within 5 years. Whereas **Probabilistic models** predict or account for the probability of various states, such as the likelihood of an asset to reach a certain condition index within 5 years.
 
 #### Deterministic Models
 
@@ -245,7 +245,7 @@ While for a simple linear regression like this, **k** can be calculated directly
 
 :::tip **Regression with Solver in MS Excel**
 
-Microsoft Excel's **Solver** tool can be used to find the best-fit equation for a given dataset by minimizing the sum of squared errors. The main steps are as follows:
+Microsoft Excel's **Solver** tool can be used to find the best-fit equation for a given dataset by minimizing the sum of squared errors. Assume you have a dataset with a list of pipe ages and for each the number N of observed breaks. The main steps are as follows:
 
 1. **Define the k Coefficient**: Set aside a single cell in the spreadsheet to hold the value of the `k` coefficient. If your equation has more coefficients, set one cell for each. At this points you should provide an initial guess of the value of each coefficient.
    
@@ -334,26 +334,107 @@ You can copy and run this code in a google colab notebook
 
 :::
 
-<!--
+
 #### Probabilistic Models
 
-explain probability distribution
-mean time to failure
+Probabilistic models of asset deterioration largely predict one of three targets:
+- probability of failing, e.g. probability of a break over the life
+- probability of changing states, e.g. probability of condition rating changing, or a new break occuring
+- time between or to failure, e.g. length of time between condition states
 
-explain modelling of failure time, survival time
-hu table 7
+To estimate the probability of failure, a distribution can be fit to the historical data. One common approach is the Weibull distribution, as applied by [Bremond (1997)](https://doi.org/10.1016/S1462-0758(01)00033-4). The Weibull distribution relates probability of failure to age of the asset according to the following probability density function (PDF):
 
-explain weibull distribution
+$$
+f(t) = \frac{\beta}{\eta} \left( \frac{t}{\eta} \right)^{\beta - 1} e^{-\left( \frac{t}{\eta} \right)^{\beta}}
+$$
 
+Where:
+- t is the time (e.g., age of the pipe or pavement),
+- β is the shape parameter,
+- η is the scale parameter.
 
-explain condition/state modelling
+The PDF provides the likelihood that an asset will fail at a certain time t. A cumulative density function (CDF) can also be useful, as it provides the likelihood that an asset will fail by time t, as in:
 
-explain markov transition matrix
+$$
+F(t) = 1 - e^{-\left( \frac{t}{\eta} \right)^{\beta}}
+$$
+ 
 
-example for facilities - bring paper from final
+The scale parameter for the Weibull functions is also called the characteristic life, as it equals the age at which 63.2% of the assets have failed. This can be easily proven as when t = η, F = 1 = e^-1.
 
-Hu recent review study
-table 6 
+With a probability function the mean time to failure (MTTF) can also be calculated. For the Weibull distribtion, this is:
 
-nishiyama fuzzy markov
--->
+$$
+MTTF = \eta \cdot \Gamma\left(1 + \frac{1}{\beta}\right)
+$$
+
+Where Γ is the Gamma function. The Gamma function is a factorial function that can be extended to non-integer values. It can be calculated in Excel with the function GAMMA().
+
+Two other key concepts related to probability of failure functions are the hazard function and the survival function. The survival function gives the probability that an asset will survive beyond a certain time t. It can be calculated as the complement of the CDF, i.e. S = 1- F. And the hazard function gives the probability that an asset will fail at any given moment, given that it has survived up until that time. It is defined as the ratio of the PDF to the survival function, i.e. f/S.
+
+:::tip **Fitting a Weibull Function in MS Excel**
+
+Assume you already have a spreadsheet with a list of pipes, where one column contains the pipe ID, another column has the install year, and a third column records the break year (only the first break). To fit a Weibull distribution to the data, follow these steps:
+
+1. **Calculate Age**: In a new column, calculate the age of each pipe at the time of failure using the formula `Age = Break Year - Install Year`.
+
+2. **Create a Pivot Table**: Make a pivot table with **Age** as the rows and **Count of Age** as the values, to aggregate the number of breaks at each age. Alternatively, you can use the COUNTIF() function to calculate the number of breaks for each age between 0 and the maximum observed age.
+
+3. **Calculate Break Frequency**: In a new column, calculate the break frequency for each age by dividing the count of breaks at each age by the total number of breaks.
+
+4. **Define Shape and Scale Parameters**: Set aside two cells for the Weibull shape parameter \( \beta \) and scale parameter \( \eta \), providing initial guesses for each.
+
+5. **Calculate Weibull PDF**: In a new column, calculate the predicted failure frequency at each age using the Weibull probability density function, WEIBULL.DIST().
+
+6. **Calculate Squared Errors**: In another column, calculate the squared errors between the observed break frequency and the predicted PDF values at each age.
+
+7. **Use Solver**: Open Excel’s **Solver** tool. Set the objective to minimize the sum of squared errors by adjusting the shape and scale parameters \( \beta \) and \( \eta \).
+
+8. **Run Solver**: Solver will iteratively adjust the shape and scale parameters until it finds the values that minimize the total error, fitting the Weibull distribution to the data.
+
+:::
+
+Other types of models, as mentioned before, focus on the probability of an asset changing states. A commonly used approach is the Markov chain, which models the probability of these state transitions. The Markov chaing assume that the future state of the asset depends only on its current state.
+In its simplest form, i.e. a homogeneous Markov chain, a square matrix with n number of states is defined, with nxn probabilities of changing states. 
+
+For example, say you have collected data on how the condition of certain facility assets have changed over one year. The condition rating is given on a scale of 1 to 3 (Good, Fair, Poor). The table below shows their conditions at both times.
+
+| Asset ID | Condition at time t | Condition at time t+1 year |
+|----------|---------------------|----------------------------|
+| 1        | Good                | Good                       |
+| 2        | Good                | Good                       |
+| 3        | Good                | Good                       |
+| 4        | Good                | Good                       |
+| 5        | Good                | Good                       |
+| 6        | Good                | Good                       |
+| 7        | Good                | Good                       |
+| 8        | Good                | Good                       |
+| 9        | Good                | Good                       |
+| 10       | Good                | Fair                       |
+| 11       | Fair                | Fair                       |
+| 12       | Fair                | Fair                       |
+| 13       | Fair                | Fair                       |
+| 14       | Fair                | Poor                       |
+| 15       | Poor                | Poor                       |
+| 16       | Poor                | Poor                       |
+| 17       | Poor                | Poor                       |
+
+From this data, a Markov chain can be built to show the probability of changing states over one year. You can start by counting how many assets started in each condition. Then for each starting condition, count how many ended with each of the three conditions.
+
+For this case, 10 began as good, 5 fair, and 3 poor. For those 10 that began good, 9 remained good and 1 changed to fair. These results can be summarized in the following matrix. The rows refer to the Condition at time t whereas the columns refer to the Condition at time t+1 year.
+
+|             | Good      | Fair      | Poor      | Total |
+|-------------|-----------|-----------|-----------|-------|
+| Good        | 9         | 1         | 0         | 10    |
+| Fair        | 0         | 4         | 1         | 5     |
+| Poor        | 0         | 0         | 3         | 3     |
+
+A Markov chain can then be calculated based on the frequencies (i.e. probabilities) of each state change. For instance, the likelihood of an asset beginning good and remaining good is 9 out of 10, i.e. 90%. All of the probabilities are shown in the table below.
+
+|             | Good      | Fair      | Poor      |
+|-------------|-----------|-----------|-----------|
+| Good        | 0.90      | 0.10      | 0         |
+| Fair        | 0         | 0.80      | 0.20      |
+| Poor        | 0         | 0         | 1         |
+
+In addition to the homogeneous Markov chain, other more complex variations can be applied to better reflect deterioration. For instance non-homegeneous Markov models allow probabilities to change over time. Another widely applied approach to modelling state changes is the Bayesian model, which incorporates prior knowledge and update predictions as new data become available, using Bayes' theorem.
