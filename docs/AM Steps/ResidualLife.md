@@ -130,6 +130,8 @@ $$
 
 Early [mechanistic models](https://doi.org/10.1680/dmp.41141.245) for pavement design were initially developed by considering stress and strain within a single material layer. Boussinesq pioneered this approach in 1885 by analyzing a cylindrical load applied to soil, assuming a homogeneous, isotropic, and linearly elastic space. In 1949, Odemark extended these ideas to layered systems, making a key assumption that the response beneath any given layer is influenced solely by the stiffness of that layer. This was also extended upon by many studies. While purely mechanistic models serve as a valuable foundation, pavement deterioration models generally use mechanistic-empirical approaches. More detailed mechanistis analyses, such as finite element analyses are restricted to specialized studies and research, where a deep understanding of stress distribution and material behaviour is required.
 
+#### Mechanistic Empirical Models
+
 A common mechanistic emprirical approach for pavement is that developed by the American Association of State Highway and Transportation Officials (AASHTO). AASHTO's Mechanistic-Empirical Pavement Design Guide (MEPDG) predicts several key pavement performance indicators, including rutting, cracking, and roughness.
 As an example, the rutting equations applied by MEPDG are presented here. 
 rutting by considering the permanent vertical deformation across various pavement layers, including Hot Mix Asphalt (HMA), unbound layers, and the foundation soil. The approach involves calculating incremental rutting within each sublayer for different sub-seasonal conditions.
