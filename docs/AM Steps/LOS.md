@@ -43,9 +43,9 @@ Similarly, for roads, they define the following goals:
 Multiple technical levels of service and related performance measures could be established under each of these goals.
 
 Take the road example for instance, the following set of LoS could be established:
-- Customer LoS: optimal condition
-- Technical LoS: pavement roughness
-- Performance Measure: average IRI
+- **Customer LoS**: optimal condition
+- **Technical LoS**: pavement roughness
+- **Performance Measure**: average IRI
 In this case the current LoS would be the IRI for the current year, and the expected LoS would be the IRI expected to be achieved by the end of the period planned in the asset management plan (e.g. 5 years). For any expected LoS that is an improvement on current LoS it is imperative that an improvement strategy is defined. In this example, the strategy would be related to how IRI could be improved, such as by increasing rehabilitation on critical roads.
 
 :::info Case Study: Medellín, Colombia – Increasing Level of Service for Equity
