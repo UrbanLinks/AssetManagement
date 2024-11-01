@@ -11,7 +11,7 @@ In the contect of infrastructure risk management, the [Canadian InfraGuide](http
 Simply put, an asset's risk of failure is the product of probability and consequence of failure
 
 $$
-Risk = text{Probability of Failure} \cdot \text{Consequence of Failure}
+Risk = \text{Probability of Failure} \cdot \text{Consequence of Failure}
 $$
 
 ## Probability of Failure
@@ -28,10 +28,12 @@ The consequence of failure represents the severity of a failure on that asset. B
 - **Reputation**: The impact on public perception, ranging from local community concern to widespread national media coverage.
 
 To systematically evaluate the consequence of failure of each asset in an infrastructure system, quantifying the consequnces in each sphere can be quite complex. Instead a framework of criteria and indicators can be developed. 
+
 For instance, if three general types of consequences are defined for a road system, economic, social and environmental, indicators for each of these categories can be defined.
 - **Economic**: Road type, land use type and average annual daily traffic
 - **Social**: Critical customers, bus route and ambulance route.
 - **Environmental**: Truck route, green spaces and water bodies.
+
 Each indicator contains information on features that would lead to lower or higher consequences of failure. For example, if the road type is local, consequences are likely lower than if the road type is highway. Similarly if the asset is next to critical customers, such as hospitals, transit stations and community centers, consequences would be higher. Based on this logic, scores can be assigned to each class within each criteria, as exemplified below. The selection of scores should follow the same range, e.g. 0 to 100, but will depend on the classes and criteria relevant to each system. Each organization will select the criteria that best represent consequence of failure and for which they have supporting data available. The criteria used in this example are all commonly available in a road asset inventory and other municipal data sources.
 
 | Road Type                | Road Type Score | Land Use              | Land Use Score | Average Annual Daily Traffic | Traffic Score |
@@ -65,7 +67,7 @@ Based on these characteristics and the previously defined score, the scores for 
 
 To compile these scores into a single consequence score, a weighted sum of scores should be calculated. The weights should be defined by the organization based on the importance of specific criteria, as well as the overall importance of each consequence category, i.e. economic, social and environmental. This weighting can be defined through internal stakeholder surveys. One common approach for doing this is the Analytical Hierarhcy Process [(AHP)](https://www.sciencedirect.com/science/article/abs/pii/037722179090057I).
 
-For simplicity in this example, let's assume equal weights among criteria and categories. In that case, for the asset shown in the table above, the overall consequence score would be 52.22. To calculated the final risk score, the consequence score would then be multiplied by the probability of failure score. Note that the probability of failure scores and consequence of failure scores should always be defined in the same ranges.
+For simplicity in this example, let's assume equal weights among criteria and categories. In that case, for the asset shown in the table above, the overall **consequence score** would be **52.22**. To calculated the final risk score, the consequence score would then be multiplied by the probability of failure score. Note that the probability of failure scores and consequence of failure scores should always be defined in the same ranges.
 
 
 ## Management Strategies
@@ -79,7 +81,7 @@ The general approaches to risk treatment include:
 
 The selection of the strategy generally depends on the asset's current risk of failure. The table below exemplifies a common approach of assigning strategies within a risk matrix. 
 
-| Consequence of Failure ↓ / Likelihood of Failure → | Rare            | Unlikely        | Possible        | Likely          | Almost Certain  |
+| Consequence of Failure / Likelihood of Failure | Rare            | Unlikely        | Possible        | Likely          | Almost Certain  |
 |-----------------------------------------------------|-----------------|-----------------|-----------------|-----------------|-----------------|
 | Catastrophic                                        | Monitor         | Schedule Renewal| Fix Soon         | Fix Now!        | Fix Now!        |
 | Major                                               | Monitor         | Monitor         | Schedule Renewal| Fix Soon        | Fix Now!        |
