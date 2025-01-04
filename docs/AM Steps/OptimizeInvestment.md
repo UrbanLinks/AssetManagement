@@ -2,13 +2,13 @@
 sidebar_position: 7
 ---
 
-# 7.Optimized O&M and Capital Investment Strategies
+# 7.Optimized Investment Strategies
 
 ## Optimization 
 
 In simple terms, optimization involves methods that aim to improve outcomes to the greatest extent possible. In infrastructure management, optimization techniques are primarily used to allocate capital or operations and maintenance (O&M) budgets efficiently, with the goal of improving levels of service.
 
-An optimization problem consists of objectives, constraints, and decision variables. Objectives could include minimizing costs, minimizing risks, or maximizing asset condition. Constraints may encompass budget limitations, regulatory requirements, or minimum levels of service. Decision variables represent the elements the optimization process will adjust to achieve the defined objectives within the constraints—such as selecting assets for replacement or rehabilitation. These examples are not exhaustive; asset managers must tailor the optimization problem to reflect the unique characteristics and available data of their system. For instance, in some cases, levels of service might be considered as constraints, while in others they might be the main objective.
+An optimization problem consists of objectives, constraints, and decision variables. Objectives could include minimizing costs, minimizing risks, or maximizing asset condition. Constraints may encompass budget limitations, regulatory requirements, minimum levels of service, worker availability, or equipment availability. Decision variables represent the elements the optimization process will adjust to achieve the defined objectives within the constraints—such as selecting assets for replacement or maintenance. These examples are not exhaustive; asset managers must tailor the optimization problem to reflect the unique characteristics and available data of their system. For instance, in some cases, levels of service might be considered as constraints, while in others they might be the main objective.
 
 Multiple objectives can also be defined, but to identify the best overall solution, these objectives should be weighted, allowing for a single composite objective to guide the decision-making process. Consider the example of optimizing a capital budget by selecting assets for replacement. If there is only one objective—minimizing risk within a fixed budget—the assets with the highest risk scores would be prioritized for replacement until the budget is exhausted. If the objectives are dual (e.g., minimizing both risk and cost), various combinations of asset replacements would need to be tested, with the resulting risk and cost outcomes of each scenario compared. To select the optimal solution, an overall score could be computed by assigning weights to risk and cost. A useful approach here is to determine the Pareto front, which represents the set of best risk-cost combinations where any improvement in one objective would lead to a compromise in the other. Ultimately, the organization would select a point on the Pareto front, thereby implicitly prioritizing risk versus cost according to its goals
 
@@ -20,16 +20,48 @@ Mathematical programming models used for optimization are more complex but can y
 
 Advanced computational techniques such as genetic algorithms offer alternative methods for complex optimization problems. Genetic algorithms are widely used as heuristic search tools that can explore numerous combinations to approach an optimal solution. Overall, while simpler methods are easier to apply and interpret, more sophisticated optimization approaches can offer substantial benefits by providing cost-effective and strategic asset management solutions.
 
-## Capital investment strategies
+## Capital Investment Strategies
 
 Capital investment refers to either asset replacement or rehabilitation. Replacement involves substituting an existing asset, which could be a like-for-like swap or an upgrade that improves the level of service. For example, replacing an outdated piece of equipment with a more efficient model, or installing a higher-capacity asset to meet growing demand, aligns with goals of enhancing service or adapting to new standards.  When setting up capital investment optimization, budgets are often defined as a constraint, dictating the extent of feasible improvements within a given fiscal period. 
 
 Because capital projects are generally large-scale, as compared to regular maintenance, it is more effective to analyze the asset systems together rather than in isolation. Coordinated investment strategies, often referred to as corridor replacements, allow for synchronized planning of adjacent assets, such as roads, water mains, and sewer lines. This approach reduces costs, especially for traditional open cut pipe replacement, and also minimizes disruptions to the community.
 
-Today, a wide range of software solutions are available that integrate data from various asset systems, perform the necessary optimization, and provide a prioritized list of capital projects. These tools streamline decision-making and for this reason are known as "Decision Support Systems".
+Today, a wide range of software solutions are available that integrate data from various asset systems, perform the necessary optimization, and provide a prioritized list of capital projects. These tools streamline decision-making and for this reason are known as "Decision Support Systems". Examples include Assetic, Deighton Total Infrastructure Management System (dTIMS), Infrastructure Data Solutions (IDS) Asset Optimizer, PowerPlan, CityWide, and Direxyon Asset Investment Planning (AIP).
 
-Vancouver, Canada – Collaborative Infrastructure Governance 
+:::info Case Study: Vancouver, Canada – Collaborative Infrastructure Governance 
 Vancouver's [collaborative infrastructure governance model](https://www.weforum.org/agenda/2023/05/vancouver-cities-develop-better-infrastructure-planning-development/) has recently stood out as a powerful approach to infrastructure planning and development. The city, facing challenges of affordability, rapid growth, climate resilience, and citizen well-being, adopted an innovative model that promotes multi-layered cooperation across various government departments. This was not a rapid, one-time change, but rather a long-term effort requiring consistent commitment and active engagement from all parties. The model fostered improved dialogue through director meetings, ensured transparency around priorities, and fostered strategic alignment across departments. Collaborative governance was developed through the following steps: integrating city-level priorities into departmental plans via a "layered" system, connecting departments to ensure consistency and coordination, incentivizing “win-win” models for jointly funded projects, focusing on outcome-driven project delivery, and instilling a culture that is flexible and responsive to stakeholder feedback. 
 An example of the model’s application is the "One Water Approach," an integrated infrastructure plan that emphasizes cross-departmental collaboration for water and watershed-related services. All planning, budgeting, and maintenance tasks are shared between stakeholders, with no single agency at the center of the process. Instead, the needs of the utility and all levels of government take precedence. The success of this model can be seen in the Alberta Street Blue Green System, a project that impacted pedestrian mobility, green space, sewage, wastewater, stormwater, broadband, and public space quality. This case underscores the transformative potential of aligning asset management and urban planning in enhancing urban sustainability and resilience.
 
+:::
+
 ## Maintenance Programs
+
+Maintenance refers to regular or minor interventions carried out to maintain the level of service of an asset and extend its useful life. Effective maintenance programs generally include three key types: corrective, preventive, and predictive maintenance.
+
+- **Corrective maintenance** involves addressing known defects or issues, either as a response to emergencies or as part of deferred maintenance. Emergency corrective maintenance can lead to higher costs due to the potential for additional damage and unplanned disruptions.
+
+- **Preventive maintenance** aims to prevent future failures by scheduling routine servicing and replacing components before issues arise. Preventive maintenance is typically more cost-effective than corrective maintenance because it reduces the likelihood of costly emergency repairs. Additionally, it allows asset managers to time multiple maintenance activities together, creating further opportunities for savings.
+
+- **Predictive maintenance** relies on inspection and condition monitoring to forecast potential failures. The results of these can be used together with deterioration models to better plan preventive maintenance, optimizing the timing of maintenance and reducing the occurrence of unexpected breakdowns.
+
+Because corrective maintenance is generally more expensive and disruptive than preventive maintenance, a mature asset management system should strive to increase the ratio of preventive (planned) to corrective (unplanned) maintenance costs, enhancing both cost efficiency and asset reliability. In addition to maintenance costs and % of preventive work, other maintenance key performance indicators (KPIs) include worker availability, % overtime, and % rework.
+
+Operations and maintenance (O&M) budgets are typically allocated as a total sum per year, unlike capital budgets, which are tied to specific projects. This approach provides more flexibility for handling corrective maintenance and unplanned work. However, it also increases the risk of underestimating O&M costs, particularly if budgets are not regularly updated to reflect increasing costs as assets age or when new assets are added to the system. 
+
+O&M budgets must cover a wide range of activities, including but not limited to:
+
+- **Data-related tasks**: Data entry, data management, setup, and analysis.  
+- **Asset lifecycle management**: Installation and commissioning, de-commissioning, and disposal.  
+- **Shutdowns and overhauls**: Planning, implementation, and management of shutdowns, turnarounds, and overhauls.  
+- **Ancillary work**: Tasks such as painting and other miscellaneous work.  
+- **Personnel management**: Managing staff, including training and supervision.  
+- **Routine servicing**: Regular inspection, checking, and adjusting of assets.  
+- **Corrective work**: Addressing failures and responding to work requests.  
+- **Condition monitoring**: Continuous monitoring of asset performance to predict failures.  
+- **Failure analysis**: Conducting root cause analyses for recurring issues.  
+- **Logistics**: Travel to and from work locations.  
+- **Procurement**: Acquiring necessary spares, tools, and equipment.  
+- **Planning and supervision**: Job scoping, costing, planning, scheduling, and providing technical supervision and support.
+
+A variety of software systems are also available to optimize maintenance and plan work orders for all types of maintenance. These systems are commonly called Computerized Maintenance Management Systems (CMMS). Examples include CityWorks, Lucity, IBM Maximo and Oracle Utilities.
+
